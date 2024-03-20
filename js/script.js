@@ -6,6 +6,10 @@
 //Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
 //MILESTONE 2:
 //Stampare le stesse informazioni su DOM sottoforma di stringhe
+//BONUS 1:
+//Trasformare la stringa foto in una immagine effettiva
+//BONUS 2:
+//Organizzare i singoli membri in card/schede
 
 
 //creo array per rappresentare i membri del team
@@ -60,7 +64,7 @@ for (let i = 0; i < colleagues.length; i++) {
             <h5>${colleague.role}</h5>
             <p><img src="img/${colleague.image}" alt=""></p>
         </li>
-    `
+    `//appendo i li al ul
     mainList.innerHTML += colleagueList;
 }
 
