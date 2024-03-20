@@ -57,14 +57,23 @@ console.log(mainList)
 for (let i = 0; i < colleagues.length; i++) {
     colleague = colleagues[i];
     console.log(colleague);
-    //creo il li da scrivere 6 volte con dati diversi
     const colleagueList = `
-        <li> 
-            <h4>${colleague.name}</h4> 
-            <h5>${colleague.role}</h5>
-            <p><img src="img/${colleague.image}" alt=""></p>
-        </li>
-    `//appendo i li al ul
+    <div class="card m-4" style="width: 18rem;">
+        <img src="img/${colleague.image}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text">${colleague.name}</p>
+            <p class="card-text">${colleague.role}</p>
+        </div>
+    </div>
+    `
+    //creo il li da scrivere 6 volte con dati diversi
+    //const colleagueList = `
+        ////  <h4>${colleague.name}</h4> 
+            //<h5>${colleague.role}</h5>
+            //<p><img src="img/${colleague.image}" alt=""></p>
+        //</li>
+    //`
+    //appendo i li al ul
     mainList.innerHTML += colleagueList;
 }
 
