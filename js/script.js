@@ -43,10 +43,24 @@ const colleagues = [
 ]
 console.log(colleagues)
 
+//segno la lista dove inserisco i nomi
+const mainList = document.querySelector('#text');
+console.log(mainList)
+
 //stampo in console le informaxzioni per ogni membro del team
 
 //uso ciclo for per stampare in console
 for (let i = 0; i < colleagues.length; i++) {
     colleague = colleagues[i];
-    console.log(colleague)
+    console.log(colleague);
+    //creo il li da scrivere 6 volte con dati diversi
+    const colleagueList = `
+        <li> 
+            <h4>${colleague.name}</h4> 
+            <h5>ROLE</h5>
+            <p>IMAGE <img src="img/" alt=""></p>
+        </li>
+    `
+    mainList.innerHTML += colleagueList;
 }
+
