@@ -41,3 +41,12 @@ const colleagues = [
         Image: 'barbara-ramos-graphic-designer.jpg'
     }
 ]
+console.log(colleagues)
+
+//stampo in console le informaxzioni per ogni membro del team
+
+//uso ciclo for per stampare in console
+for (let i = 0; i < colleagues.length; i++) {
+    colleague = colleagues[i];
+    console.log(colleague)
+}
